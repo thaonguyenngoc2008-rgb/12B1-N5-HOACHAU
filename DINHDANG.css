@@ -1,0 +1,133 @@
+        :root {
+            --primary-color: #6a11cb;
+            --secondary-color: #2575fc;
+            --accent-color: #f0e6ff;
+            --text-color: #333;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+            color: var(--text-color);
+            line-height: 1.8;
+            background-color: #fdfafb;
+        }
+
+        .container { width: 85%; margin: 0 auto; max-width: 1100px; }
+        section { padding: 60px 0; border-bottom: 1px solid #eee; }
+        h2 { color: var(--primary-color); text-align: center; font-size: 2rem; margin-bottom: 40px; }
+
+        /* Header */
+        header {
+            background: url('congtruong.jpg'); 
+            background-size: cover; background-position: center;
+            height: 80vh; display: flex; align-items: flex-end; justify-content: center;
+            color: white; text-align: center;
+        }
+        header h1 { font-size: 4rem; margin: 0; letter-spacing: 5px; }
+        .slogan { font-family: 'Dancing Script', cursive; font-size: 2rem; margin-top: 10px; }
+
+        /* Section 1 & 2: Lịch sử & Thành tích */
+        .grid { display: flex; gap: 30px; flex-wrap: wrap; }
+        .card { flex: 1; min-width: 300px; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .highlight-num { font-size: 2.5rem; color: var(--secondary-color); font-weight: bold; display: block; }
+
+        /* Section 3: Đội ngũ & Cơ sở vật chất */
+        .info-box { background: var(--accent-color); padding: 30px; border-radius: 20px; margin-bottom: 30px; }
+        .teacher-spotlight { border-left: 5px solid var(--primary-color); padding-left: 20px; font-style: italic; }
+
+        /* Section 4: Hoạt động & Tri ân */
+        .activity-list { list-style: none; padding: 0; }
+        .activity-list li { margin-bottom: 15px; padding-left: 30px; position: relative; }
+        .activity-list li::before { content: '✨'; position: absolute; left: 0; }
+
+        .tribute-text { 
+            background: #fff; padding: 40px; border-radius: 20px; 
+            text-align: justify; box-shadow: 0 10px 30px rgba(106, 17, 203, 0.1);
+            font-size: 1.1rem; border: 1px double var(--primary-color);
+        }
+
+        /* Footer */
+        footer { background: #333; color: white; padding: 50px 0; text-align: center; }
+        .hashtags span { 
+            display: inline-block; margin: 5px; padding: 8px 15px; 
+            background: rgba(255,255,255,0.1); border-radius: 20px; transition: 0.3s;
+        }
+        .hashtags span:hover { background: var(--primary-color); cursor: pointer; }
+
+        .media-placeholder { 
+            display: inline-block; align-items: center; justify-content: center;
+            border-radius: 15px; margin: 20px 60px;
+        }
+        .anh_giao_vien {display: inline; align-items: center; justify-content: center;
+            border-radius: 15px; margin: 20px 40px;}
+        .b1 {display: inline-flex; gap: 10px}
+        /*Thư viện ảnh*/
+        .gallery {
+         display: flex;
+        flex-wrap: wrap;
+         justify-content: flex-start;
+        }
+
+        .gallery-item {
+        margin: 5px;
+        border: 1px solid #ccc;
+        width: 180px;
+        }
+
+        .gallery-item:hover {
+        border: 1px solid #777;
+        }
+
+        .gallery-item img {
+        width: 100%;
+        height: auto;
+        }
+
+        .gallery-item div.desc {
+        padding: 15px;
+        text-align: center;
+        }
+        /*Bình luận*/
+        .binh_luan {background-color: lightblue; margin-left: 10px; color: grey;}
+        /*Mục lục*/
+            /* 1. Định dạng khung chứa mục lục (thẻ div bao ngoài) */
+            .muc-luc-container {
+            background-color: #f0faff; /* Màu nền xanh nhạt */
+            border-radius: 15px;       /* Bo tròn góc */
+            padding: 25px;
+            max-width: 500px;          /* Giới hạn độ rộng */
+            margin: 20px auto;         /* Căn giữa màn hình */
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Tạo bóng đổ nhẹ */
+            }
+
+            /* 2. Trang trí tiêu đề "MỤC LỤC BÀI VIẾT" */
+            .muc-luc-container h2 {
+            color: #6a1b9a;            /* Màu tím đậm */
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 20px;
+      
+            }
+
+            /* 3. Định dạng từng mục con */
+            .muc-luc-container li {
+            margin-bottom: 12px;
+            transition: transform 0.2s; /* Hiệu ứng nhích sang phải khi hover */
+            }
+
+            .muc-luc-container li:hover {
+            transform: translateX(10px); /* Nhích sang phải 10px khi di chuột vào */
+            }
+
+            /* 4. Trang trí các siêu liên kết (thẻ a) */
+            .muc-luc-container a {
+            text-decoration: none;     /* Bỏ gạch chân mặc định */
+            color: #0056b3;            /* Màu xanh liên kết */
+            font-weight: 500;
+            display: block;            /* Để link chiếm hết chiều ngang dòng */
+            }
+
+            .muc-luc-container a:hover {
+            color: #d32f2f;            /* Đổi sang màu đỏ khi di chuột */
+            }
